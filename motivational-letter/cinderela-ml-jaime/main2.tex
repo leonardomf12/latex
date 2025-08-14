@@ -1,0 +1,85 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[top=2.54cm, bottom=2.54cm, left=2.54cm, right=2.54cm]{geometry}
+
+
+% Fonts
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman} % main text
+\newfontface\emoji{Noto Color Emoji}[Renderer=Harfbuzz] % emoji font
+
+
+% Date 
+\usepackage[en-US]{datetime2} % load this before defining MonthYear
+%\newcommand{\MonthYear}{\DTMmonthname{\the\month} \number\year}
+
+
+%\DTMsetdatestyle{monthyear} % built-in style for Month Year
+
+
+\title{}
+\author{}
+\date{}
+
+\begin{document}
+	
+	% Heading
+	\noindent
+	\begin{minipage}[b]{0.48\textwidth}
+		\raggedright
+		%\MonthYear \\
+		\textbf{Motivational Letter}
+	\end{minipage}%
+	\hfill
+	\begin{minipage}[b]{0.48\textwidth}
+		\raggedleft
+		LeonardoEng12@gmail.com {\emoji ✉️}\\
+		+351 911912891 {\emoji 📞} \\
+		Porto, Portugal {\emoji 📍}
+	\end{minipage}
+	\vspace{5pt}
+	\hrule
+	
+	% Content
+	\vspace{1em}
+	
+	\noindent Dear Hiring Manager,
+	
+	\vspace{1em}
+	
+	\noindent I am writing to express my interest in the research position in Computer Vision at INESCTEC for the CINDERELA project. With a strong foundation in physics and machine learning, I bring both research and industry experience that I believe that align closely with your team’s objectives.
+	
+	\vspace{1em}
+	
+	\noindent \noindent In my industry role, I developed my master’s thesis project, focusing on optimizing detection models in a production line system by enhancing how contextual information is fed to models. Additionally, I supported the team in various tasks, gaining hands-on experience in practical problem-solving. Key contributions include:
+	\begin{itemize}
+		\item Maintained and optimized a data pipeline to process and filter raw production data for inclusion in training datasets. 
+		\item Developed a real-time flask application enabling non-ML colleagues to monitor dataset growth and extract insights autonomously.
+		\item Designed a segmentation model to identify defect locations during production, minimizing downtime and improving client satisfaction.
+	\end{itemize}
+	\vspace{-8pt}
+	During this period, I strengthened my expertise in Python (using mainly Tensorflow), MLflow, TensorRT, PostgreSQL, Docker, and Kubernetes.
+	
+	\vspace{1em}
+	
+	\noindent During my research tenure, I contributed to several projects, including:
+	\begin{itemize}
+		\item Human pose detection using Wi-Fi signal data.
+		\item Applying SHAP methodologies as an explainable AI tool in a facial recognition application.
+		\item Developing lightweight segmentation models for satellite deployment using knowledge distillation techniques.
+		\item (...)
+	\end{itemize}
+	\vspace{-8pt}
+	\noindent During this period, I strengthened my expertise in Python (using mainly Pytorch).
+	
+	\vspace{1em}
+	
+	\noindent I am particularly enthusiastic about working with medical imaging, having recently collaborated with INESCTEC colleagues a challenge named CHIMERA, for the MICCAI conference, where we developed multi-modality survival models to predict time-to-event recurrence in cancer prognosis. This challenge has been both highly rewarding and an excellent learning experience, which I consider invaluable. I am confident that my experience, skills, and motivation will enable me to make a meaningful contribution to this project.
+	
+	\vspace{1.5em}
+	
+	\noindent Thank you for your attention. I look forward to the possibility of contributing to your research initiatives.\vspace{2pt}
+	
+	\noindent Best regards,\\
+	\noindent Leonardo Machado Ferreira
+	
+\end{document}
